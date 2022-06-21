@@ -10,9 +10,9 @@ class LatestRelease extends Component {
       <Container className="bg">
         <h1 className="text-center text-light mb-4">Fantasy Books</h1>
         <Row>
-          {fantasyBooks.map((book) => (
-            <Col className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 mb-5">
-              <Card className="card" key={book.asin}>
+          {fantasyBooks.slice(0, 18).map((book) => (
+            <Col key={book.title} xs={12} sm={6} md={4} lg={2} className="mb-5">
+              <Card className="card">
                 <Card.Img
                   style={{ width: "auto", height: "200px", objectFit: "cover" }}
                   variant="top"

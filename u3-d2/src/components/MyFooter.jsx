@@ -6,9 +6,7 @@ class MyFooter extends Component {
   render() {
     return (
       <footer className="footerList">
-        <li>Terms and Conditions</li>
-        <li>Privacy</li>
-        <li>More Info</li>
+        Terms and Conditions Privacy More Info
       </footer>
     );
   }
