@@ -1,3 +1,5 @@
+/** @format */
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+.whole-page {
+  background-color: #282c34;
+}
+.card {
+  background-color: inherit !important;
+  color: white;
+  border: none !important;
+}
+.card:hover {
+  box-shadow: 5px 3px 5px grey;
+}
+.card-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.footerList {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  list-style: none;
+}
+.jumbotron-section {
+  color: white;
+  text-align: center;
+  background: linear-gradient(#954c10 20%, #272727 80%);
 }

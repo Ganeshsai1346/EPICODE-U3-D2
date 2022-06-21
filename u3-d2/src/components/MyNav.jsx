@@ -1,7 +1,7 @@
 /** @format */
 
 import { Component } from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 class MyNav extends Component {
   render() {
@@ -11,13 +11,30 @@ class MyNav extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
+            <NavDropdown title="Books" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">
+                Fantasy Books
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Sci-Fi Books
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">
+                History Books
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Horror Books
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Romance Books
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+            </NavDropdown>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link href="#deets">LogIn</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+              SignUp
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
